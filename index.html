@@ -26,19 +26,17 @@
       <div class="container">
           <div class="row">
   
-              <span class="title">Продукция</span>
+              <h2 class="title">Продукция</h2>
   
               <div class="col card-link card-link_1">
                   <div class="card-link_icon icon-1"></div>
-                  <div class="card-link_title">Продукция из меди и сплавов</div>
-                  <p class="card-link_subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem itaque
-                      esse, numquam illum id officia quibusdam obcaecati sit porro, eos ipsam corporis deserunt nesciunt
-                      voluptatum. Fugit ea illo accusantium ad.</p>
+                  <div class="card-link_title">Продукция из </div>
+                  <p class="card-link_subtitle">Lorem ipsum dolor sit amet .</p>
                   <a href="#!">Подробнее →</a>
               </div>
               <div class="col card-link card-link_2">
                   <div class="card-link_icon icon-2"></div>
-                  <div class="card-link_title">Продукция из меди и сплавов</div>
+                  <div class="card-link_title">Продукция из меди </div>
                   <p class="card-link_subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem itaque
                       esse, numquam illum id officia quibusdam obcaecati sit porro, eos ipsam corporis deserunt nesciunt
                       voluptatum. Fugit ea illo accusantium ad.</p>
@@ -48,8 +46,7 @@
                   <div class="card-link_icon icon-3"></div>
                   <div class="card-link_title">Продукция из меди и сплавов</div>
                   <p class="card-link_subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem itaque
-                      esse, numquam illum id officia quibusdam obcaecati sit porro, eos ipsam corporis deserunt nesciunt
-                      voluptatum. Fugit ea illo accusantium ad.</p>
+                      esse, numquam illum id officia quibusdam obcaecati sit </p>
                   <a href="#!">Подробнее →</a>
               </div>
           </div>
@@ -117,7 +114,7 @@
 
 
 
-      section.products span.title {
+      section.products h2.title {
           position: absolute;
           color: #fff;
           font-size: 45px;
@@ -133,6 +130,7 @@
           margin: 0 17px;
           cursor: pointer;
           transition: .2s ease-in-out;
+          width: 33%;
       }
 
       .card-link:hover {
@@ -205,10 +203,10 @@
       }
 
       @media screen and (max-width: 1326px) {
-          section.products span.title {
+          section.products h2.title {
               transform: rotate(0deg);
-              left: 42px;
-              top: -103px;
+              left: 18px;
+              top: -97px;
           }
 
           section.products {
@@ -235,8 +233,19 @@
               flex-wrap: wrap;
           }
 
+          .card-link {
+              width: 100%;
+              margin: 0 0 20px;
+          }
+
           .card-link .card-link_icon:after {
               margin-right: -10px;
+          }
+
+          section.products h2.title {
+              left: 0;
+              top: -73px;
+              font-size: 30px;
           }
       }
 
